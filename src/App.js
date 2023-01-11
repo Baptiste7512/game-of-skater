@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Wrapper from "./components/Wrapper";
+import Screen from "./components/Screen";
+import ButtonBox from "./components/ButtonBox";
+import Button from "./components/Button";
+import { useState } from "react";
+import React from "react";
 
-function App() {
+const App = () => {
+
+  const [activeTrick, setActiveTrick, randomTrick] = useState(0);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Screen activeTrick={activeTrick}
+              setActiveTrick={setActiveTrick}>
+      </Screen>
+      <ButtonBox>
+          <Button setActiveTrick={setActiveTrick}
+                  randomTrick={randomTrick}/>
+      </ButtonBox>
+    </Wrapper>
   );
-}
+};
 
 export default App;
