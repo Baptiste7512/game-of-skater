@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+                                            Game of skater (React)
+                                           ------------------------
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Game of Skate règles:
 
-## Available Scripts
+Les règles du Game of Skate sont similaires à celles du hockey ou du football, où chaque joueur effectue une série de figures à tour de rôle sur un obstacle (comme un quart de pipe ou un rail) et tente de les réaliser avec succès. Le but est de faire éliminer son adversaire en réussissant des figures plus difficiles. Les joueurs peuvent également "tricher" (c'est-à-dire ne pas réaliser complètement une figure) pour faire éliminer leur adversaire plus rapidement.
+Il existe des variantes de ces règles selon le lieu ou l'événement où il est pratiqué mais c'est généralement ce qui est commun.
 
-In the project directory, you can run:
+----------------------------------------------------------------------------------------------------------
 
-### `npm start`
+Game of skater est un jeu qui permet de faire un générateur de figures de skate.
+Pour le moment, l'application ne permet que de générer les tricks (figures), mais il serait intéressant de pouvoir rajouter des Joueur pour comptabiliser les points, faire un bilan des figures rater, mettre des catégories différentes pour orientez les choix...
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+-----------------------------------------------------------------------------------------------------------
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+J'ai réaliser cette application pour m'améliorer et mieux comprendre l'architecture du framework React, notamment pour les hooks, qui permettent de créer une connection entre plusieurs composant (ici, l'écran d'affichage, ainsi que le pad qui permet de relancer le générateur). 
+Mais aussi pour créer une base de données autour du skate et comprendre son fonctionnement. 
 
-### `npm test`
+------------------------------------------------------------------------------------------------------------
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+                                              Design V.1
+![Capture web_11-1-2023_144346_localhost](https://user-images.githubusercontent.com/80527980/211821676-2d75d4fd-5e1d-4854-a97c-2aecd6469ceb.jpeg)
