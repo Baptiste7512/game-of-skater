@@ -1,0 +1,47 @@
+.name{
+
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+  margin: 5px 5px 5px 5px;
+  padding: 0.5em;
+
+}
+
+.input{
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+  justify-content: center;
+  margin: 10px 10px 10px 10px;
+  padding: 0.5em;
+}
+
+.input > input{
+  margin-top: 1em;
+}
+.input-text{
+  height: 4em;
+  border-radius: 10px;
+  background-color: rgb(80, 60, 209);
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.input-button{
+  width: 15em;
+  height: 3em;
+  margin: 0 auto;
+  border-radius: 10px;
+  font-weight: bold;
+  background-color: whitesmoke;
+  border: none;
+}
+
+.input-button:active{
+  background-image: linear-gradient(135deg, #503CD1 40%, #FFBE0B);
+  color: whitesmoke;
+}
