@@ -2,23 +2,40 @@ import "./css/NumberPlayer.css";
 import "./css/Wrapper.css";
 import React from "react";
 
-class NumberPlayer extends React.Component {
-  Players = [];
 
-  state = {
-    playerName: ""
+class NumberPlayer extends React.Component {
+
+
+  constructor(props) {
+    super(props);
+    this.Players = [];
+    this.state = {
+      playerName: ""
+    };
   }
 
   handleSubmit = (e) => {
     e.preventDefault();
-    // créer un joueur avec le nom saisi ici
-    /* console.log("Joueur ajouter: ", this.state.playerName); */
-    // ajouter le nouveau joueur au tableau Players
-    this.Players.push(this.state.playerName)
-    console.log(this.Players)
+
+    /* ajouter le nouveau joueur au tableau Players */
+    this.Players.push(this.state.playerName);
+    /* console.log(this.Players); */
+
+    const newPlayers = [...this.Players];
+    if (newPlayers.length <= 6) {
+      this.props.setPlayers(newPlayers);
+    /* console.log(newPlayers); */
+    this.setState({
+      playerName: ""
+    });
+    } else {
+      alert("t'est un ouff bg");
+    }
+
+
     // réinitialiser le nom du joueur dans le state pour effacer l'input du formulaire
-    this.setState({playerName: ""});
-  }
+    /* this.setState({playerName: ""}); */
+}
 
   handleChange = (e) => {
     this.setState({playerName: e.target.value});
@@ -40,18 +57,9 @@ class NumberPlayer extends React.Component {
                  className='input-button'
                  value="Confirme" />
         </div>
-        {/*
-          A faire dans un autre Module autre fichier Js
-        <div className="Players">
-           Pour chaque joueurs il faut une case soit itéré dessus afin de construire la div
-          { for (let i = 0; i < Players.length) {
-            const element = array[i];
-            i++;
-          }}
-        </div> */}
       </form>
     );
   }
 }
 
-export default NumberPlayer
+export default NumberPlayer;
