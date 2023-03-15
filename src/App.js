@@ -4,10 +4,10 @@ import ButtonBox from "./components/ButtonBox";
 import Button from "./components/Button";
 import NumberPlayer from "./components/NumberPlayer";
 import GridPlayer from "./components/GridPlayer";
-
 import { useState } from "react";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import ButtonStart from "./components/ButtonStart";
 
 const App = () => {
 
@@ -22,6 +22,7 @@ const App = () => {
             <Wrapper>
              <NumberPlayer setPlayers={setPlayers} />
              <GridPlayer players={players} setPlayer={setActivePlayer} />
+             <ButtonStart />
             </Wrapper>
           }>
           </Route>
