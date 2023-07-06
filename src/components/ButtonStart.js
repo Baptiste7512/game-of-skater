@@ -6,9 +6,9 @@ import "./css/Wrapper.css";
 
 function ButtonStart() {
   return (
-  <div className="button-start">
+  <div className="block-button-principal">
     <Link to ="/game">
-      <button>Lets's go</button>
+      <button className="button-principal">Let's go</button>
     </Link>
   </div>
   )

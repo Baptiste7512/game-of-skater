@@ -18,17 +18,16 @@
   padding: 0.5em;
 }
 
-.input > input{
-  margin-top: 1em;
-}
 .input-text{
   height: 4em;
+  width: 11em;
   border-radius: 10px;
   background-color: rgb(80, 60, 209);
   font-size: x-large;
   text-align: center;
-  font-weight: bold;
   color: whitesmoke;
+  margin: 0 0 15px 15px;
+  /* a revoir parce que c'est laid */
 }
 
 .input-button{

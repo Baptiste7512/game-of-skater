@@ -30,3 +30,8 @@
 .button-start a button {
   padding: 10px;
 }
+
+.list-gamer {
+  display: flex;
+  justify-content: space-around;
+}
